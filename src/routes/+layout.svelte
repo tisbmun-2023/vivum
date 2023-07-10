@@ -1,23 +1,25 @@
 <script>
 	import Link from "$lib/components/Link.svelte";
 	import "../app.postcss";
+	import "../root.postcss"
     import Header from '../lib/components/Header.svelte';
 </script>
 
-<div class="flex flex-col h-screen justify-between bg-gradient-to-b from-blue-900 to-blue-700 text-white overflow-hidden">
-	<Header></Header>
+<div class="flex flex-col h-screen justify-between text-white overflow-x-hidden bg-gradient-to-b from-blue-900 to-blue-700">
+	<article id="root">
+		<Header></Header>
 
-	<main>
-		<slot></slot>
-	</main>
-
-	<footer class="mb-auto">
-		<p>VIVUM 2023 Team. Made by 
+		<main>
+			<slot></slot>
+		</main>
+	</article>
+	<footer class="mb-auto bg-black">
+		<p>VIVUM 2023. Made by 
 			<Link href="https://github.com/cheesycod">
 				<strong>cheesycod</strong>!
 			</Link>
 		</p>
-	</footer>
+	</footer>	
 </div>
 
 <style>
