@@ -18,4 +18,10 @@ export const nav: Nav[] = [
         url: '/about',
         isOnPage: (path: string) => path === '/about'
     },
+    {
+        id: 'register',
+        name: 'Register',
+        url: '/register',
+        isOnPage: (path: string) => path === '/register'
+    }
 ]

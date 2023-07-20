@@ -1,18 +1,22 @@
 <script>
 	import Link from "$lib/components/Link.svelte";
 	import "../app.postcss";
-	import "../root.postcss"
+	import "$lib/css/fonts.css"
     import Header from '../lib/components/Header.svelte';
 </script>
 
-<div class="flex flex-col h-screen justify-between text-white overflow-x-hidden bg-gradient-to-b from-blue-900 to-blue-700">
-	<article id="root">
-		<Header></Header>
+<svelte:head>
+	<style>
+        @import url("https://fonts.googleapis.com/css?family=Nunito%20Sans&display=swap");
+    </style>
+</svelte:head>
 
-		<main>
-			<slot></slot>
-		</main>
-	</article>
+<div class="flex min-h-screen flex-col justify-between text-white overflow-x-hidden bg-[#001f5b]">
+	<Header></Header>
+
+	<main>
+		<slot></slot>
+	</main>
 	<footer class="mb-auto bg-black">
 		<p>VIVUM 2023. Made by 
 			<Link href="https://github.com/cheesycod">
@@ -27,9 +31,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
