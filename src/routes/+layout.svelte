@@ -1,29 +1,30 @@
 <script>
-	import Link from "$lib/components/Link.svelte";
-	import "../app.postcss";
-	import "$lib/css/fonts.css"
-    import Header from '../lib/components/Header.svelte';
+	import Link from '$lib/components/Link.svelte';
+	import '../app.postcss';
+	import '$lib/css/fonts.css';
+	import Header from '../lib/components/Header.svelte';
 </script>
 
 <svelte:head>
 	<style>
-        @import url("https://fonts.googleapis.com/css?family=Nunito%20Sans&display=swap");
-    </style>
+		@import url('https://fonts.googleapis.com/css?family=Nunito%20Sans&display=swap');
+	</style>
 </svelte:head>
 
-<div class="flex min-h-screen flex-col justify-between text-white overflow-x-hidden bg-[#001f5b]">
-	<Header></Header>
+<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#001f5b] text-white">
+	<Header />
 
 	<main>
-		<slot></slot>
+		<slot />
 	</main>
 	<footer class="mb-auto bg-black">
-		<p>VIVUM 2023. Made by 
+		<p>
+			VIVUM 2023. Made by
 			<Link href="https://github.com/cheesycod">
 				<strong>cheesycod</strong>!
 			</Link>
 		</p>
-	</footer>	
+	</footer>
 </div>
 
 <style>

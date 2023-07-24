@@ -3,66 +3,57 @@
 -->
 
 <script lang="ts">
-	import { onMount } from "svelte";
+	interface Button {
+		text: string;
+		href: string;
+	}
 
-    interface Button {
-        text: string,
-        href: string
-    }
-
-    export let title: string;
-    export let button: Button | null = null;
-
-    onMount(() => {
-        const inViewport: IntersectionObserverCallback = (entries, observer) => {
-            entries.forEach(entry => {
-                console.log("AnimatedBox: isInViewPort triggered")
-                entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-            });
-        };
-
-        const Obs = new IntersectionObserver(inViewport);
-
-        // Attach observer to every [data-inviewport] element:
-        const ELs_inViewport = document.querySelectorAll('[data-inviewport]');
-        ELs_inViewport.forEach(EL => {
-            Obs.observe(EL);
-        });
-    })
+	export let title: string;
+	export let button: Button | null = null;
 </script>
 
-<div data-inviewport="scale-in" class="card sm:w-[30rem] lg:w-[36rem] min-h-[26rem] p-6 mb-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-        <slot />
-    </p>
-    {#if button}
-      <a href={button?.href} class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        {button?.text}
-        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-      </a>
+<div class="card md:w-[1/2] lg:w-1/3 mb-5 mr-3 rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800">
+	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white p-3">{title}</h5>
+		<p class="mb-3 h-[20rem] overflow-y-scroll font-normal text-gray-600 dark:text-stone-400 p-3">
+			<slot />
+		</p>
+		{#if button}
+			<a
+				href={button?.href}
+				class="inline-flex items-center justify-end rounded-md bg-blue-700 px-3 py-2 text-center font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			>
+				{button?.text}
+				<svg
+					class="ml-2 h-3.5 w-3.5"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 14 10"
+				>
+					<path
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M1 5h12m0 0L9 1m4 4L9 9"
+					/>
+				</svg>
+			</a>
     {/if}
 </div>
 
 <style>
-/* inViewport */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #c0c5e5;
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 
-:global([data-inviewport="scale-in"]) { 
-  transition: 2s;
-  transform: scale(0.1);
-}
-:global([data-inviewport="scale-in"].is-inViewport) { 
-  transform: scale(1);
-}
-
-:global([data-inviewport="fade-rotate"]) { 
-  transition: 2s;
-  opacity: 0;
-}
-:global([data-inviewport="fade-rotate"].is-inViewport) { 
-  transform: rotate(180deg);
-  opacity: 1;
-}
+::-webkit-scrollbar-thumb:active { 
+    background-color: rgb(168 85 247 / var(--tw-text-opacity));
+}  
 </style>

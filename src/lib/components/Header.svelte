@@ -5,15 +5,15 @@
 	import tisb from '$lib/images/tisb.png';
 	import Icon from '@iconify/svelte';
 
-    function onClickMenu() {
-      console.log("clicked");
-  
-      const menu = document.getElementById("menu");
-  
-      if (menu) {
-        menu.classList.toggle("hidden");
-      }
-    }
+	function onClickMenu() {
+		console.log('clicked');
+
+		const menu = document.getElementById('menu');
+
+		if (menu) {
+			menu.classList.toggle('hidden');
+		}
+	}
 </script>
 
 <header class="mb-3 h-10 p-2 text-xl">
@@ -21,10 +21,12 @@
 		<div class="flex items-center space-x-6">
 			<a href="/" class="flex items-center">
 				<img src={tisb} class="mr-3 h-6 sm:h-9" alt="TISB Logo" />
-				<span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white mr-3">VIVUM 2023</span>
+				<span class="mr-3 self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+					>VIVUM 2023</span
+				>
 			</a>
 			<nav>
-				<ul class="hidden lg:flex items-center space-x-4">
+				<ul class="hidden items-center space-x-4 lg:flex">
 					{#each nav as navItem}
 						<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
 							<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
@@ -33,28 +35,52 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="flex items-center space-x-2 relative">
+		<div class="relative flex items-center space-x-2">
 			{#each socialMedia as sm}
-				<a class="text-xl" href={sm?.url} id={sm?.id + "-icon"}>
+				<a class="text-xl" href={sm?.url} id={sm?.id + '-icon'}>
 					<Icon icon={sm?.icon} inline={true} />
 				</a>
 			{/each}
 
-			<button on:click={onClickMenu} type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+			<button
+				on:click={onClickMenu}
+				type="button"
+				class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				aria-controls="navbar-default"
+				aria-expanded="false"
+			>
 				<span class="sr-only">Open main menu</span>
-				<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-			</button>			
+				<svg
+					class="h-6 w-6"
+					aria-hidden="true"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg"
+					><path
+						fill-rule="evenodd"
+						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+						clip-rule="evenodd"
+					/></svg
+				>
+			</button>
 		</div>
 	</div>
 </header>
 
-<div id="menu" class="hidden bg-">
-	<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">  
+<div id="menu" class="bg- hidden">
+	<div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
 		{#each nav as link}
-			<a href={link?.url} class="block px-3 py-2 text-base font-medium text-violet-600 rounded-md hover:text-gray-900 hover:bg-gray-50 dark:text-amber-400 dark:hover:text-white dark:hover:bg-gray-700">{link?.name}</a>
+			<a
+				href={link?.url}
+				class="block rounded-md px-3 py-2 text-base font-medium text-violet-600 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
+				>{link?.name}</a
+			>
 		{/each}
 
-		<button on:click={onClickMenu} class="w-full text-left block px-3 py-2 text-base font-medium text-violet-600 rounded-md hover:text-gray-900 hover:bg-gray-50 dark:text-amber-400 dark:hover:text-white dark:hover:bg-gray-700">Close Menu</button>
+		<button
+			on:click={onClickMenu}
+			class="block w-full rounded-md px-3 py-2 text-left text-base font-medium text-violet-600 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
+			>Close Menu</button
+		>
 	</div>
-</div>	
-
+</div>
