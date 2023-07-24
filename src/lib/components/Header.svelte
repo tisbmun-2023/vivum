@@ -4,16 +4,10 @@
 	import { nav } from '$lib/config/nav';
 	import tisb from '$lib/images/tisb.png';
 	import Icon from '@iconify/svelte';
+	import Dropdown from './Dropdown.svelte';
+	import DropdownMobile from './DropdownMobile.svelte';
 
-	function onClickMenu() {
-		console.log('clicked');
-
-		const menu = document.getElementById('menu');
-
-		if (menu) {
-			menu.classList.toggle('hidden');
-		}
-	}
+	let mobileOpen = false
 </script>
 
 <header class="mb-3 h-10 p-2 text-xl">
@@ -27,11 +21,12 @@
 			</a>
 			<nav>
 				<ul class="hidden items-center space-x-4 lg:flex">
-					{#each nav as navItem}
-						<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
-							<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
-						</li>
-					{/each}
+						{#each nav as navItem}
+							<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
+								<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
+							</li>
+						{/each}
+					<Dropdown />
 				</ul>
 			</nav>
 		</div>
@@ -41,11 +36,11 @@
 					<Icon icon={sm?.icon} inline={true} />
 				</a>
 			{/each}
-
+			
 			<button
-				on:click={onClickMenu}
+				on:click={() => mobileOpen = !mobileOpen}
 				type="button"
-				class="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				class="ml-3 sm:inline-flex md:hidden items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 				aria-controls="navbar-default"
 				aria-expanded="false"
 			>
@@ -67,20 +62,24 @@
 	</div>
 </header>
 
-<div id="menu" class="bg- hidden">
-	<div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-		{#each nav as link}
-			<a
-				href={link?.url}
-				class="block rounded-md px-3 py-2 text-base font-medium text-violet-600 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
-				>{link?.name}</a
-			>
-		{/each}
+{#if mobileOpen}
+	<div id="mobile-menu" class="md:hidden">
+		<div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+			{#each nav as link}
+				<a
+					href={link?.url}
+					class="block rounded-md px-3 py-2 text-base font-medium text-slate-50 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
+					>{link?.name}</a
+				>
+			{/each}
 
-		<button
-			on:click={onClickMenu}
-			class="block w-full rounded-md px-3 py-2 text-left text-base font-medium text-violet-600 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
-			>Close Menu</button
-		>
+			<DropdownMobile />
+
+			<button
+				on:click={() => mobileOpen = !mobileOpen}
+				class="block w-full rounded-md px-3 py-2 text-left text-base font-medium text-slate-50 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
+				>Close Menu</button
+			>
+		</div>
 	</div>
-</div>
+{/if}

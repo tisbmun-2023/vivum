@@ -3,7 +3,6 @@
 	import FlexedArea from '$lib/components/FlexedArea.svelte';
 	import Section from '$lib/components/Section.svelte';
 	import { dates, time } from '$lib/config/indexPage';
-	import Icon from '@iconify/svelte';
 </script>
 
 <svelte:head>
@@ -26,14 +25,13 @@
 		Save The Dates!
 	</h4>
 	<p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl">
-		<Icon icon="mdi:calendar-month-outline" class="inline" inline={true} />
 		Date: {dates}
 	</p>
 	<p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl">
-		<Icon icon="mdi:clock" class="inline" inline={true} />
 		Time: {time}
 	</p>
-	<Section title="Music Events">
+
+	<Section title="Music" id="music">
 		<FlexedArea>
 			<AnimatedBox
 				title="Battle of the Bands"
@@ -84,8 +82,78 @@
 					<li class="mb-2"><strong>Location: Radio Shack</strong></li>
 				</ul>
 			</AnimatedBox>
-			<AnimatedBox title="Test">Hello world</AnimatedBox>
-			<AnimatedBox title="Test">Hello world</AnimatedBox>
+			<AnimatedBox 
+				title="Rap battle"
+				button={{
+					text: "Register Now",
+					href: "https://forms.office.com/r/e55rpGYYii"
+				}}
+			>
+				Many believe that rap is poetry. What can you do with your words? Prompting creativity and delivery at only a moment's 
+				notice, the Rap Battle has become a participant favourite at VIVUM.
+
+				<ul class="mt-4 list-inside list-disc">
+					<li class="mb-2">No restriction on number of participants per school</li>
+					<li class="mb-2">Two participants will be pitted against each other each round</li>
+				</ul>
+				<p class="mt-3">
+					Ingenuity, spontaneity, and passion for rap are core components of this freestyle battle, yet, in true street 
+					fashion, there are no set judges: the crowd determines the winners.
+				</p>
+			</AnimatedBox>
+		</FlexedArea>
+	</Section>
+
+	<Section title="Dance" id="dance">
+		<FlexedArea>
+			<AnimatedBox 
+				title="Dance Off"
+				button={{
+					text: "Register Now",
+					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgKnoHWCifQ1PoXhIAqDbClxUOVUyUjA4S1QxRE5OSzJYWUVRS0NWODJZUy4u"
+				}}
+			>
+				Get the crowd roaring. Every year, hundreds of students come to watch passionate dancers fight it out in a small circle, 
+				as they display their exquisite skills.
+	
+				<ul class="mt-4 list-inside list-disc">
+					<li class="mb-2">
+						This competition works on a knock-out basis
+					</li>
+					<li class="mb-2">
+						One team per school, 6 participants max
+					</li>
+					<li class="mb-2">
+						Matched in pairs to dance-off in a crowd-generated circle
+					</li>
+
+					Participants have 50 seconds to show off their dance skills as much as they can. The judging criterion is simple: the more hyped the crowd is, the better you score.
+					
+				</ul>
+			</AnimatedBox>
+			<AnimatedBox title = "Shake it up" button={{
+				text: "Register Now",
+				href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgKnoHWCifQ1PoXhIAqDbClxUNlBNN0FBUDY2V1ZHTlJJTzE5VTIwVVRORC4u"
+			}}>
+				
+			
+				Merge 3 different dance forms! In this new addition to VIVUM’23 dancers get to express their expertise in diverse dance forms (such as salsa, contemporary, classical, hiphop, etc)
+				<ul class="mt-4 list-inside list-disc">
+					<li class="mb-2">One team consisting of 4 - 8 participants</li>
+					<li class="mb-2">Round 1: Shake It Up ( The Tri-dance fusion) - each team gets to pick any 3 songs from any genre to merge 3 different dance forms in 3 mins. If you’re lucky to make it to…
+					</li>
+					<li class="mb-2">Round 2: the Bollywood Era Switch, you will have to use 3 different eras of bollywood songs, consisting of one song from each range:
+						<ol class="ml-4 mt-4 list-inside list-decimal text-center border border-purple-500 bg-[#011f59] rounded-md" >
+							<li class="mb-2"> 1980 - 2000</li>
+							<li class="mb-2"> 2000 - 2010</li>
+							<li class="mb-2">2010 - 2023</li>
+
+						</ol>
+					</li>
+				</ul>
+					
+				
+			</AnimatedBox>	
 		</FlexedArea>
 	</Section>
 </article>

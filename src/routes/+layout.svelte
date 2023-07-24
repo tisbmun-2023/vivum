@@ -11,7 +11,7 @@
 	</style>
 </svelte:head>
 
-<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#001f5b] text-white">
+<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#011f59] text-white">
 	<Header />
 
 	<main>
@@ -21,8 +21,9 @@
 		<p>
 			VIVUM 2023. Made by
 			<Link href="https://github.com/cheesycod">
-				<strong>cheesycod</strong>!
-			</Link>
+				<strong>cheesycod</strong>
+			</Link> and 
+			<Link href="https://github.com/SpectreZ7">SpectreZ7</Link>
 		</p>
 	</footer>
 </div>

@@ -12,9 +12,9 @@
 	export let button: Button | null = null;
 </script>
 
-<div class="card md:w-[1/2] lg:w-1/3 mb-5 mr-3 rounded-lg border border-gray-200 bg-white p-6 shadow dark:border-gray-700 dark:bg-gray-800">
-	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white p-3">{title}</h5>
-		<p class="mb-3 h-[20rem] overflow-y-scroll font-normal text-gray-600 dark:text-stone-400 p-3">
+<div class="card md:w-[1/2] lg:w-1/3 mb-5 mr-3 rounded-lg border border-purple-500 p-6 shadow dark:border-purple-500 bg-[#100159]">
+	<h5 class="mb-2 text-2xl font-bold tracking-tight p-3">{title}</h5>
+		<p class="mb-3 h-[20rem] overflow-y-scroll font-normal text-stone-400 p-3">
 			<slot />
 		</p>
 		{#if button}

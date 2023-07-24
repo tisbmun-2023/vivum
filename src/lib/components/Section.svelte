@@ -1,8 +1,9 @@
 <script lang="ts">
 	export let title: string;
+	export let id: string;
 </script>
 
-<fieldset class="section m-4 text-purple-500">
+<fieldset class="section m-4 text-purple-500" id={id}>
 	<legend class="p-3 text-2xl font-bold">{title}</legend>
 	<div class="content">
 		<slot />
