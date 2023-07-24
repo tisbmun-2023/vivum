@@ -143,9 +143,9 @@
 					<li class="mb-2">Round 1: Shake It Up ( The Tri-dance fusion) - each team gets to pick any 3 songs from any genre to merge 3 different dance forms in 3 mins. If you’re lucky to make it to…
 					</li>
 					<li class="mb-2">Round 2: the Bollywood Era Switch, you will have to use 3 different eras of bollywood songs, consisting of one song from each range:
-						<ol class="ml-4 mt-4 list-inside list-decimal text-center border border-purple-500 bg-[#011f59] rounded-md" >
-							<li class="mb-2"> 1980 - 2000</li>
-							<li class="mb-2"> 2000 - 2010</li>
+						<ol class="ml-4 mt-4 text-center border border-purple-500 bg-[#011f59] rounded-md" >
+							<li class="mb-2">1980 - 2000</li>
+							<li class="mb-2">2000 - 2010</li>
 							<li class="mb-2">2010 - 2023</li>
 
 						</ol>
