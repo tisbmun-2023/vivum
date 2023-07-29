@@ -30,7 +30,7 @@
 	<h2 class="text-3xl font-semibold">Whats On Offer?</h2>
 	<p class="mb-5 text-xl">
 		We have several events available right now. Please see <a
-			href="/events"
+			href="/"
 			class="text-blue-300 hover:text-blue-500">Events</a
 		>
 		for more information on whats cooking and how to register!
