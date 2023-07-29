@@ -3,7 +3,7 @@
 
 	export let disabled: boolean = false;
 
-	export let onclick = () => {};
+	export let href: string;
 </script>
 
 {#if disabled}
@@ -15,8 +15,8 @@
 		<slot />
 	</button>
 {:else}
-	<button
-		on:click={onclick}
+	<a
+        href={href}
 		class="mb-2 inline-flex items-center rounded-md bg-blue-700 px-3 py-2 text-center font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
 	>
 		<slot />
@@ -35,5 +35,5 @@
 				/></svg
 			>
 		{/if}
-	</button>
+    </a>
 {/if}

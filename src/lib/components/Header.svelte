@@ -7,7 +7,7 @@
 	import Dropdown from './Dropdown.svelte';
 	import DropdownMobile from './DropdownMobile.svelte';
 
-	let mobileOpen = false
+	let mobileOpen = false;
 </script>
 
 <header class="mb-3 h-10 p-2 text-xl">
@@ -21,11 +21,11 @@
 			</a>
 			<nav>
 				<ul class="hidden items-center space-x-4 lg:flex">
-						{#each nav as navItem}
-							<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
-								<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
-							</li>
-						{/each}
+					{#each nav as navItem}
+						<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
+							<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
+						</li>
+					{/each}
 					<Dropdown />
 				</ul>
 			</nav>
@@ -36,11 +36,11 @@
 					<Icon icon={sm?.icon} inline={true} />
 				</a>
 			{/each}
-			
+
 			<button
-				on:click={() => mobileOpen = !mobileOpen}
+				on:click={() => (mobileOpen = !mobileOpen)}
 				type="button"
-				class="ml-3 sm:inline-flex md:hidden items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				class="ml-3 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 sm:inline-flex md:hidden"
 				aria-controls="navbar-default"
 				aria-expanded="false"
 			>
@@ -76,7 +76,7 @@
 			<DropdownMobile />
 
 			<button
-				on:click={() => mobileOpen = !mobileOpen}
+				on:click={() => (mobileOpen = !mobileOpen)}
 				class="block w-full rounded-md px-3 py-2 text-left text-base font-medium text-slate-50 hover:bg-gray-50 hover:text-gray-900 dark:text-amber-400 dark:hover:bg-gray-700 dark:hover:text-white"
 				>Close Menu</button
 			>

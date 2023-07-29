@@ -2,7 +2,7 @@
 	import { dates } from '$lib/config/indexPage';
 </script>
 
-<article class="mx-2 px-2">
+<article class="m-4 px-2">
 	<h1 class="text-4xl font-semibold">VIVUM 2023</h1>
 	<h2 class="text-3xl font-bold">Rise with the Tide</h2>
 

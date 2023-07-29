@@ -2,6 +2,7 @@
 	import Link from '$lib/components/Link.svelte';
 	import '../app.postcss';
 	import '$lib/css/fonts.css';
+	import '$lib/css/global.css';
 	import Header from '../lib/components/Header.svelte';
 </script>
 
@@ -22,7 +23,7 @@
 			VIVUM 2023. Made by
 			<Link href="https://github.com/cheesycod">
 				<strong>cheesycod</strong>
-			</Link> and 
+			</Link> and
 			<Link href="https://github.com/SpectreZ7">SpectreZ7</Link>
 		</p>
 	</footer>
