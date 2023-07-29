@@ -1,12 +1,11 @@
 <script>
-	import AnimatedBox from '$lib/components/AnimatedBox.svelte';
+	import EventCard from '$lib/components/EventCard.svelte';
 	import FlexedArea from '$lib/components/FlexedArea.svelte';
 	import ListItem from '$lib/components/ListItem.svelte';
 	import OrderedList from '$lib/components/OrderedList.svelte';
 	import Group from '$lib/components/Group.svelte';
 	import UnorderedList from '$lib/components/UnorderedList.svelte';
 	import { dates, time } from '$lib/config/indexPage';
-	import Section from '$lib/components/Section.svelte';
 	import SponsorPage from '$lib/components/SponsorPage.svelte';
 </script>
 
@@ -38,7 +37,7 @@
 
 	<Group title="Music" id="music">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Battle of the Bands"
 				button={{
 					text: 'Register Now',
@@ -66,8 +65,8 @@
 					</ListItem>
 					<ListItem><strong>Location: Main Auditorium</strong></ListItem>
 				</UnorderedList>
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Beatbox Battle"
 				button={{
 					text: 'Register Now',
@@ -86,8 +85,8 @@
 					</ListItem>
 					<ListItem><strong>Location: Radio Shack</strong></ListItem>
 				</UnorderedList>
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Rap battle"
 				button={{
 					text: 'Register Now',
@@ -106,13 +105,13 @@
 					Ingenuity, spontaneity, and passion for rap are core components of this freestyle battle,
 					yet, in true street fashion, there are no set judges: the crowd determines the winners.
 				</p>
-			</AnimatedBox>
+			</EventCard>
 		</FlexedArea>
 	</Group>
 
 	<Group title="Dance" id="dance">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Dance Off"
 				button={{
 					text: 'Register Now',
@@ -130,8 +129,8 @@
 					Participants have 50 seconds to show off their dance skills as much as they can. The
 					judging criterion is simple: the more hyped the crowd is, the better you score.
 				</UnorderedList>
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Shake it up"
 				button={{
 					text: 'Register Now',
@@ -156,12 +155,12 @@
 						</OrderedList>
 					</ListItem>
 				</UnorderedList>
-			</AnimatedBox>
+			</EventCard>
 		</FlexedArea>
 	</Group>
 	<Group title="Drama" id="drama">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Stand-up comedy"
 				button={{
 					text: 'Register Now',
@@ -176,8 +175,8 @@
 					<ListItem>Round 1 is a seven-minute set on the topic of 'filter'</ListItem>
 					<ListItem>Five participants will advance to the finals.</ListItem>
 				</UnorderedList>
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Film"
 				button={{
 					text: 'Register Now',
@@ -208,8 +207,8 @@
 					</ListItem>
 					<ListItem>Five participants will advance to the finals.</ListItem>
 				</UnorderedList>
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Lipsync Battle"
 				button={{
 					text: "Register Now",
@@ -219,8 +218,8 @@
 				In this event, participants will compete against each other in pairs, performing a lip sync to popular songs from a pre-selected list. 
 				<br/><br/>
 				The audience will judge the performances, and the winners will be chosen based on their overall performance and entertainment value.
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Vivum Multiverse"
 				button={{
 					text: "Register Now",
@@ -239,12 +238,12 @@
 				</UnorderedList>
 
 				They will have the chance to deliver a 10-minute set on a topic of their choice. All content must be PG- 13.
-			</AnimatedBox>
+			</EventCard>
 		</FlexedArea>
 	</Group>
 	<Group title="Fashion" id="fashion">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Fashion Show"
 				button={{
 					text: "Register Now",
@@ -263,12 +262,12 @@
 					<ListItem>25 people will progress to the next round, and put into groups of 5, with 2 winning.</ListItem>
 					<ListItem>Round 3 will have 10 people left, describing their outfit, the relevance to the theme, and their inspiration</ListItem>
 				</UnorderedList>
-			</AnimatedBox>
+			</EventCard>
 		</FlexedArea>
 	</Group>
 	<Group title="Media" id="media">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Jaws Out"
 				button={{
 					text: "Register Now",
@@ -280,12 +279,12 @@
 				<br/><br/>
 
 				The event also features a designated "wet zone" where people can throw around water for fun.
-			</AnimatedBox>
+			</EventCard>
 		</FlexedArea>
 	</Group>
 	<Group title="Other" id="other">
 		<FlexedArea>
-			<AnimatedBox
+			<EventCard
 				title="Shark Tank With A Twist"
 				button={{
 					text: "Register Now",
@@ -297,8 +296,8 @@
 			<br/><br/>
 
 			Participants will pitch their useless and absurd ideas to a group of judges and the audience. The group with the most unique and entertaining idea, as determined by the judges and audience votes, will be declared the winner.
-			</AnimatedBox>
-			<AnimatedBox
+			</EventCard>
+			<EventCard
 				title="Wonder Woman/Iron man challenge"
 				button={{
 					text: "On-spot registration only",
@@ -310,8 +309,8 @@
 
 				<br/><br/>
 				From group events to IVI, this mini-event tests participants' physical strength and willpower. Participants will exercise until they can't handle it anymore or until they drop down with exhaustion.
-			</AnimatedBox>	
-			<AnimatedBox
+			</EventCard>	
+			<EventCard
 				title="Canvas Painting"
 				button={{
 					text: "On-spot registration only",
@@ -320,8 +319,8 @@
 				}}
 			>
 				Participants will work together to create a large canvas painting during the event, adding their unique touch to a masterpiece in the making.
-			</AnimatedBox>	
-			<AnimatedBox
+			</EventCard>	
+			<EventCard
 				title="Paparazzi"
 				button={{
 					text: "On-spot registration only",
@@ -338,8 +337,8 @@
 				<br/><br/>
 
 				We want to see the best poses you can come up with when suddenly faced with the camera. 
-			</AnimatedBox>	
-			<AnimatedBox
+			</EventCard>	
+			<EventCard
 				title="Shark Scanveger Hunt"
 				button={{
 					text: "On-spot registration only",
@@ -348,7 +347,7 @@
 				}}
 			>
 				Participants will search for sharks hidden throughout the school, and those who find them will receive rewards such as coupons or raffle tickets.
-			</AnimatedBox>						
+			</EventCard>						
 		</FlexedArea>
 	</Group>
 
