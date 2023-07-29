@@ -7,6 +7,8 @@
 	import UnorderedList from '$lib/components/UnorderedList.svelte';
 	import { dates, time } from '$lib/config/indexPage';
 	import SponsorPage from '$lib/components/SponsorPage.svelte';
+	import Countdown from '$lib/components/Countdown.svelte';
+
 </script>
 
 <svelte:head>
@@ -25,15 +27,17 @@
 		To register, please contact your school for more information
 	</h4>
 	<div class="mb-18" />
-	<h4 id="save-the-datesh" class="mt-10 p-3 text-center text-4xl font-semibold underline">
-		Save The Dates!
-	</h4>
-	<p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl">
-		Date: {dates}
-	</p>
-	<p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl">
-		Time: {time}
-	</p>
+	<!-- <h4 id="save-the-datesh" class="mt-10 p-3 text-center text-4xl font-semibold underline"> -->
+		<!-- Save The Dates! -->
+	<!-- </h4> -->
+	<!-- <p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl"> -->
+		<!-- Date: {dates} -->
+	<!-- </p> -->
+	<!-- <p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl"> -->
+		<!-- Time: {time} -->
+	<!-- </p> -->
+
+	<Countdown />
 
 	<Group title="Music" id="music">
 		<FlexedArea>
@@ -43,6 +47,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/mxT6FpdQ55'
 				}}
+				location="Main Auditorium"
 			>
 				Bands representing their schools from all over the city will perform songs on stage to get
 				the highest score from our judges, who consist of talented and knowledgeable musicians. The
@@ -63,7 +68,6 @@
 						guitarists or extra cymbals for drummers) must be brought by participants, only after
 						prior notice is given to the organizing committee.
 					</ListItem>
-					<ListItem><strong>Location: Main Auditorium</strong></ListItem>
 				</UnorderedList>
 			</EventCard>
 			<EventCard
@@ -72,6 +76,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/CV1zSBs3aj'
 				}}
+				location="Radio Shack"
 			>
 				Similar to the rap battle, this event showcases students facing off and flaunting their
 				talents, creating the most complex beat possible solely with their mouth to triumph over
@@ -83,7 +88,6 @@
 						Only six teams will be allowed to participate on a first-come-first-serve basis, so
 						reserve your spot quickly!
 					</ListItem>
-					<ListItem><strong>Location: Radio Shack</strong></ListItem>
 				</UnorderedList>
 			</EventCard>
 			<EventCard
@@ -92,6 +96,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/e55rpGYYii'
 				}}
+				location="Radio Shack"
 			>
 				Many believe that rap is poetry. What can you do with your words? Prompting creativity and
 				delivery at only a moment's notice, the Rap Battle has become a participant favourite at
@@ -117,6 +122,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgKnoHWCifQ1PoXhIAqDbClxUOVUyUjA4S1QxRE5OSzJYWUVRS0NWODJZUy4u'
 				}}
+				location = "Radio Shack"
 			>
 				Get the crowd roaring. Every year, hundreds of students come to watch passionate dancers
 				fight it out in a small circle, as they display their exquisite skills.
@@ -136,6 +142,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgKnoHWCifQ1PoXhIAqDbClxUNlBNN0FBUDY2V1ZHTlJJTzE5VTIwVVRORC4u'
 				}}
+				location = "Small Auditorium"
 			>
 				Merge 3 different dance forms! In this new addition to VIVUM'23 dancers get to express their
 				expertise in diverse dance forms (such as salsa, contemporary, classical, hiphop, etc)
@@ -166,6 +173,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/Vwy9hNdjzz'
 				}}
+				location = "Amphitheatre"
 			>
 				So, you think you're funny? Solo comics, it's your time to shine and make your audiences
 				laugh with your original sets and witty jokes.
@@ -182,6 +190,7 @@
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/VnNQtMaNHb'
 				}}
+				location = "Small Auditorium"
 			>
 				Lights, camera, action! In this event, filmmakers get to tell a story and show it to the
 				masses.
@@ -214,6 +223,7 @@
 					text: "Register Now",
 					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgAoKTYgiu2FBv46toYfPvNZUQlUyQTZXTzNESkNFR0VFUEk2VlZDWVM1Si4u"
 				}}
+				location = "Main auditorium"
 			>
 				In this event, participants will compete against each other in pairs, performing a lip sync to popular songs from a pre-selected list. 
 				<br/><br/>
@@ -225,6 +235,7 @@
 					text: "Register Now",
 					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgAoKTYgiu2FBv46toYfPvNZUMlRRTTY1WE00MTBGNFlLOEMyRTdEQUNPNi4u"
 				}}
+				location = "Main auditorium"
 			>
 				This event is a role-playing game where participants act out scenes from famous Bollywood and Hollywood movies. 
 				<br/><br/>
@@ -249,6 +260,7 @@
 					text: "Register Now",
 					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgAoKTYgiu2FBv46toYfPvNZURUs5SkdJTVQ3T0RDVlRZQU01Uk4xRFkxVS4u"
 				}}
+				location = "Main auditorium"
 			>
 				This event features students showing off their creative fashion sense on the runway. 
 				<br/><br/>
@@ -273,6 +285,7 @@
 					text: "Register Now",
 					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgAoKTYgiu2FBv46toYfPvNZUMVYyQzhYMVBQMEFOTEs0NUY0SDFZV1gyWC4u"
 				}}
+				location = "Main auditorium"
 			>
 				This event is a social media-based competition where participants leave funny comments on celebrity posts anonymously. The winner will be chosen based on the number of likes they receive. 
 
@@ -290,12 +303,17 @@
 					text: "Register Now",
 					href: "https://forms.office.com/Pages/ResponsePage.aspx?id=jgbSOiU_hk2ePRxkXvnrgAoKTYgiu2FBv46toYfPvNZURjNYS0M4SE1NRDc3VlA0VVlMOFE1NzRLSC4u"
 				}}
+				location = "Main auditorium"
 			>
 			This event puts a humorous spin on the popular TV show Shark Tank. 
 
 			<br/><br/>
 
-			Participants will pitch their useless and absurd ideas to a group of judges and the audience. The group with the most unique and entertaining idea, as determined by the judges and audience votes, will be declared the winner.
+			Participants will pitch their useless and absurd ideas to a group of judges and the audience.
+			
+			<br /><br />
+			
+			The group with the most unique and entertaining idea, as determined by the judges and audience votes, will be declared the winner.
 			</EventCard>
 			<EventCard
 				title="Wonder Woman/Iron man challenge"
@@ -304,11 +322,13 @@
 					href: "#",
 					disabled: true
 				}}
+				location = "Main auditorium"
 			>
 				Test your physical limits and push your body further than you thought possible in this intense, all-out test of physical prowess.
 
 				<br/><br/>
 				From group events to IVI, this mini-event tests participants' physical strength and willpower. Participants will exercise until they can't handle it anymore or until they drop down with exhaustion.
+
 			</EventCard>	
 			<EventCard
 				title="Canvas Painting"
@@ -317,9 +337,12 @@
 					href: "#",
 					disabled: true
 				}}
+				location = "Near Game Stalls"
 			>
 				Participants will work together to create a large canvas painting during the event, adding their unique touch to a masterpiece in the making.
-			</EventCard>	
+
+				<br/><br/>
+			</EventCard>
 			<EventCard
 				title="Paparazzi"
 				button={{
@@ -327,6 +350,7 @@
 					href: "#",
 					disabled: true
 				}}
+				location = "Near Game Stalls"
 			>
 				Pose for the camera!
 
@@ -337,6 +361,10 @@
 				<br/><br/>
 
 				We want to see the best poses you can come up with when suddenly faced with the camera. 
+
+				<br /><br/>
+
+				<em>Location: Near game stalls</em>
 			</EventCard>	
 			<EventCard
 				title="Shark Scanveger Hunt"
@@ -345,6 +373,7 @@
 					href: "#",
 					disabled: true
 				}}
+				location = "Near Game Stalls"
 			>
 				Participants will search for sharks hidden throughout the school, and those who find them will receive rewards such as coupons or raffle tickets.
 			</EventCard>						
@@ -353,7 +382,7 @@
 
 	<hr />
 
-	<h2 class="text-2xl font-bold mb-3 m-4">Our sponsors</h2>
+	<h2 class="text-4xl font-bold mb-3 m-4">Our sponsors</h2>
 
 	<SponsorPage />
 </article>
