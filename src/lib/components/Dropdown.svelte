@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { eventList } from '$lib/config/events';
 	import DropdownInner from './DropdownInner.svelte';
 
 	export let open: boolean = false;
@@ -29,7 +28,7 @@
 		</button>
 		<!-- Dropdown menu -->
 		{#if open}
-			<DropdownInner />
+			<DropdownInner onClick={() => open = false} />
 		{/if}
 	</span>
 {/if}

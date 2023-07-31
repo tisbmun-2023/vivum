@@ -1,9 +1,9 @@
 <script>
-	import Link from '$lib/components/Link.svelte';
 	import '../app.postcss';
 	import '$lib/css/fonts.css';
 	import '$lib/css/global.css';
 	import Header from '../lib/components/Header.svelte';
+	import { email } from '$lib/config/indexPage';
 </script>
 
 <svelte:head>
@@ -19,13 +19,12 @@
 		<slot />
 	</main>
 	<footer class="mb-auto bg-black">
-		<p>
-			VIVUM 2023. Made by
-			<Link href="https://github.com/cheesycod">
-				<strong>cheesycod</strong>
-			</Link> and
-			<Link href="https://github.com/SpectreZ7">SpectreZ7</Link>
-		</p>
+		<h2 class="text-xl">
+			VIVUM 2023
+		</h2>
+		<h3 class="text-center">
+			Contact us at <a class="font-bold hover:opacity-80" href="mailto:{email}">{email}</a>
+		</h3>
 	</footer>
 </div>
 

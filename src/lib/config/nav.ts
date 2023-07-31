@@ -23,5 +23,11 @@ export const nav: Nav[] = [
 		name: "Sponsors",
 		url: "/sponsors",
 		isOnPage: (path: string) => path === "/sponsors"
+	},
+	{
+		id: "contact-us",
+		name: "Contact Us",
+		url: "/contact",
+		isOnPage: (path: string) => path === "/contact"
 	}
 ];

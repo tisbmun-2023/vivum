@@ -6,10 +6,6 @@
 
 </script>
 
-<h3 class="ml-4 text-2xl font-semibold">
-	Thank you to all of our sponsors who have made VIVUM 2023 possible!
-</h3>
-
 <article>
 	<Group title="Platinum Sponsors" id="platinum-sponsor">
 		<FlexedArea>
@@ -28,8 +24,7 @@
 	<Group title="Silver Sponsors" id="silver-sponsor">
 		<FlexedArea>
 			<Sponsor id="kangaro" name="Kangaro" href="https://kangarokgoc.com/" />
-			<Sponsor id="implesys" name="Implesys" href="https://www.implesys.com/" /> <!--Placeholder-->
-			<Sponsor id="bhashyamgroup" name="Bhashyam Group" href="https://www.bhashyam.in//" /> <!--Placeholder-->
+			<Sponsor id="impelsys" name="Impelsys" href="https://www.impelsys.com/" />
 			<Sponsor id="rajsuperwhite" name="Raj Super White" href="http://www.rajsuperwhite.com/" />
 			<Sponsor id="redrhino" name="Redrhino" href="https://redrhino.co.in/" />
 

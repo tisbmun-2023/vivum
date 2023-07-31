@@ -24,6 +24,9 @@
 					{#each nav as navItem}
 						<li aria-current={navItem.isOnPage($page.url.pathname) ? 'page' : undefined}>
 							<a class="hover:text-amber-300" href={navItem?.url}>{navItem?.name}</a>
+							{#if navItem.isOnPage($page.url.pathname)}
+								<hr class="w-full h-0.5 bg-amber-300" />
+							{/if}
 						</li>
 					{/each}
 					<Dropdown />
@@ -32,8 +35,10 @@
 		</div>
 		<div class="relative flex items-center space-x-2">
 			{#each socialMedia as sm}
-				<a class="text-xl" href={sm?.url} id={sm?.id + '-icon'}>
-					<Icon icon={sm?.icon} inline={true} />
+				<a class="hover:opacity-80" href={sm?.url} id={sm?.id + '-icon'} aria-details={sm?.name} >
+					<span class="text-lg">
+						<Icon icon={sm?.icon} class="inline-block mr-1" /><span class="sr-only">{sm?.tag}</span>
+					</span>
 				</a>
 			{/each}
 

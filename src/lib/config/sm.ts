@@ -2,20 +2,16 @@ interface SocialMedia {
 	id: string;
 	url: string;
 	icon: string;
-	alt: string;
+	name: string;
+	tag: string;
 }
 
 export const socialMedia: SocialMedia[] = [
 	{
-		id: 'facebook',
-		url: 'https://www.facebook.com/your-facebook-page',
-		icon: 'mdi:facebook',
-		alt: 'Facebook page'
+		id: 'instagram',
+		name: "Instagram",
+		url: 'https://www.instagram.com/tisbangalore',
+		tag: "@vivum2023",
+		icon: 'mdi:instagram',
 	},
-	{
-		id: 'twitter',
-		url: 'https://twitter.com/your-twitter-page',
-		icon: 'mdi:twitter',
-		alt: 'Twitter page'
-	}
 ];

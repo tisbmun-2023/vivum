@@ -5,7 +5,6 @@
 	import OrderedList from '$lib/components/OrderedList.svelte';
 	import Group from '$lib/components/Group.svelte';
 	import UnorderedList from '$lib/components/UnorderedList.svelte';
-	import { dates, time } from '$lib/config/indexPage';
 	import SponsorPage from '$lib/components/SponsorPage.svelte';
 	import Countdown from '$lib/components/Countdown.svelte';
 
@@ -22,20 +21,12 @@
 	<h3 id="event-name" class="animate-pulse text-center text-6xl font-semibold lg:text-9xl">
 		VIVUM 2023
 	</h3>
+	<h2 class="text-4xl text-center font-bold">Rise with the Tide</h2>
 	<div class="mb-18" />
 	<h4 id="registration" class="text-center text-2xl font-semibold opacity-70">
 		To register, please contact your school for more information
 	</h4>
 	<div class="mb-18" />
-	<!-- <h4 id="save-the-datesh" class="mt-10 p-3 text-center text-4xl font-semibold underline"> -->
-		<!-- Save The Dates! -->
-	<!-- </h4> -->
-	<!-- <p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl"> -->
-		<!-- Date: {dates} -->
-	<!-- </p> -->
-	<!-- <p id="event-date" class="text-center text-2xl font-semibold lg:text-3xl"> -->
-		<!-- Time: {time} -->
-	<!-- </p> -->
 
 	<Countdown />
 
@@ -237,7 +228,7 @@
 				}}
 				location = "Main auditorium"
 			>
-				This event is a role-playing game where participants act out scenes from famous Bollywood and Hollywood movies. 
+				This event is a role-playing game where the participants act out scenes from famous Bollywood and Hollywood movies. 
 				<br/><br/>
 				
 				Participants will be given chits with a specific character and scene, and they will have to act out the character's actions and dialogue in a humorous and entertaining way.	
@@ -383,6 +374,8 @@
 	<hr />
 
 	<h2 class="text-4xl font-bold mb-3 m-4">Our sponsors</h2>
-
+	<h3 class="ml-4 text-2xl font-semibold">
+		Thank you to all of our sponsors who have made VIVUM 2023 possible!
+	</h3>	
 	<SponsorPage />
 </article>
