@@ -16,19 +16,20 @@
 </svelte:head>
 
 <article>
-	<h1 class="text-center text-8xl font-bold">Welcome to</h1>
-	<div class="mb-7 mt-7" />
-	<h3 id="event-name" class="animate-pulse text-center text-6xl font-semibold lg:text-9xl">
-		VIVUM 2023
-	</h3>
-	<h2 class="text-4xl text-center font-bold">Rise with the Tide</h2>
-	<div class="mb-18" />
-	<h4 id="registration" class="text-center text-2xl font-semibold opacity-70">
-		To register, please contact your school for more information
-	</h4>
-	<div class="mb-18" />
+	<div class="shark-img">
+		<h1 class="text-center text-8xl font-bold">Welcome to</h1>
+		<div class="mb-7 mt-7" />
+		<h3 id="event-name" class="animate-pulse text-center text-6xl font-semibold lg:text-9xl">
+			VIVUM 2023
+		</h3>
+		<h2 class="text-4xl text-center font-bold">Rise with the Tide</h2>
+		<h4 id="registration" class="text-center text-2xl font-semibold opacity-70">
+			To register, please contact your school for more information
+		</h4>	
+		<div class="mb-24" />
 
-	<Countdown />
+		<Countdown />	
+	</div>
 
 	<Group title="Music" id="music">
 		<FlexedArea>

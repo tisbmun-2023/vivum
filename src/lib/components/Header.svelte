@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	import { socialMedia } from '$lib/config/sm';
 	import { nav } from '$lib/config/nav';
-	import tisb from '$lib/images/tisb.png';
 	import Icon from '@iconify/svelte';
 	import Dropdown from './Dropdown.svelte';
 	import DropdownMobile from './DropdownMobile.svelte';
@@ -10,11 +9,11 @@
 	let mobileOpen = false;
 </script>
 
-<header class="mb-3 h-10 p-2 text-xl">
+<header class="h-12 p-2 text-xl bg-black">
 	<div class="mx-auto flex items-center justify-between">
 		<div class="flex items-center space-x-6">
 			<a href="/" class="flex items-center">
-				<img src={tisb} class="mr-3 h-6 sm:h-9" alt="TISB Logo" />
+				<img src="/core/tisb.webp" class="mr-3 h-6 sm:h-9" alt="TISB Logo" />
 				<span class="mr-3 self-center whitespace-nowrap text-xl font-semibold dark:text-white"
 					>VIVUM 2023</span
 				>

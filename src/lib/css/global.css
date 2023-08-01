@@ -6,3 +6,14 @@
 .card:hover {
     transform: translate(0px, -5px);
 }
+
+.shark-img {
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(255,255,255,0),rgba(1,31,89)), url('/core/shark.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    
+
+}
