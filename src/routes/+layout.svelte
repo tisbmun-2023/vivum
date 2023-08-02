@@ -9,10 +9,11 @@
 <svelte:head>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Nunito%20Sans&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Comic%20Neue&display=swap');
 	</style>
 </svelte:head>
 
-<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#011f59] text-white">
+<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#011f59] text-white ">
 	<Header />
 
 	<main>
