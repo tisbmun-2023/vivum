@@ -12,7 +12,7 @@
 
 <svelte:head>
 	<title>VIVUM 2023</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Welcome to VIVUM2023, Bangalore's largest student-run fest" />
 </svelte:head>
 
 <article>

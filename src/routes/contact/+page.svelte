@@ -4,8 +4,13 @@
 	import UnorderedList from "$lib/components/UnorderedList.svelte";
 	import { email } from "$lib/config/indexPage";
 	import { socialMedia } from "$lib/config/sm";
-
 </script>
+
+<svelte:head>
+	<title>Contact VIVUM2023</title>
+	<meta name="description" content="Welcome to VIVUM2023, Bangalore's largest student-run fest" />
+</svelte:head>
+
 <article class="m-4 px-2">
 	<h3 class="text-center text-6xl font-semibold lg:text-9xl">
 		VIVUM 2023

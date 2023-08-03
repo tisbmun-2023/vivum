@@ -13,7 +13,7 @@
 	</style>
 </svelte:head>
 
-<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#0a2d70] text-white ">
+<div class="flex min-h-screen flex-col justify-between overflow-x-hidden bg-[#011f59] text-white ">
 	<Header />
 
 	<main>
