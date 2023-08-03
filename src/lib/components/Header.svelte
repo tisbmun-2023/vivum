@@ -9,7 +9,7 @@
 	let mobileOpen = false;
 </script>
 
-<header class="h-12 p-2 text-xl bg-black">
+<header id="oxygen" class="h-12 p-2 text-xl bg-black">
 	<div class="mx-auto flex items-center justify-between">
 		<div class="flex items-center space-x-6">
 			<a href="/" class="flex items-center">
@@ -87,6 +87,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-</style>

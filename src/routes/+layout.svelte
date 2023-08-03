@@ -9,7 +9,7 @@
 <svelte:head>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Nunito%20Sans&display=swap');
-		@import url('https://fonts.googleapis.com/css?family=Comic%20Neue&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
 	</style>
 </svelte:head>
 
