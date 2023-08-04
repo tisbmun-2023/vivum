@@ -22,6 +22,6 @@
 		grid-area: 1 / 1; /* first row, first column */
 		padding: 20px;
 		width: inherit;
-		background: #291a73 !important;
+		background: #342484 !important;
 	}
 </style>
