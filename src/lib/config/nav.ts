@@ -16,18 +16,18 @@ export const nav: Nav[] = [
 		id: 'about',
 		name: 'About',
 		url: '/about',
-		isOnPage: (path: string) => path === '/about'
+		isOnPage: (path: string) => path.startsWith('/about')
 	},
 	{
 		id: "sponsors",
 		name: "Sponsors",
 		url: "/sponsors",
-		isOnPage: (path: string) => path === "/sponsors"
+		isOnPage: (path: string) => path.startsWith("/sponsors")
 	},
 	{
 		id: "contact-us",
 		name: "Contact Us",
 		url: "/contact",
-		isOnPage: (path: string) => path === "/contact"
+		isOnPage: (path: string) => path.startsWith("/contact")
 	}
 ];
