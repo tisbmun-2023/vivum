@@ -16,13 +16,13 @@
 	</Group>
 	<Group title="Gold Sponsors" id="gold-sponsor">
 		<FlexedArea>
+			<Sponsor id="wildcraft" name="Wildcraft" href="https://wildcraft.com/" />
 			<Sponsor id="ion" name="I-ON" href="" />
 			<Sponsor id="shingora" name="Shingora" href="https://shingora.net/" allowBlack={true} />
 			<Sponsor id="champions-group" name="Champions Group" href="https://www.championsgroup.com/" />
 			<Sponsor id="rawpressery" name="Raw Pressery" href="https://www.rawpressery.com/" />
 			<Sponsor id="dailyhunt" name="DailyHunt" href="https://m.dailyhunt.in/" />
 			<Sponsor id="questforsuccess" name="Quest For Success" href="https://www.questforsuccess.in//" />
-			<!--<Sponsor id="wildcraft" name="Wildcraft" href="https://wildcraft.com/" />-->
 		</FlexedArea>	
 	</Group>
 	<Group title="Silver Sponsors" id="silver-sponsor">
