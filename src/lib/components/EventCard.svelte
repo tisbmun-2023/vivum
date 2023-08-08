@@ -15,6 +15,12 @@
 	export let title: string;
 	export let button: Button | null = null;
 	export let location: string;
+
+	const titleCase = (str: string) => {
+		return str.replace(/(^|\s)\S/g, function (t) {
+        	return t.toUpperCase()
+    	})
+	};
 </script>
 
 <div
@@ -23,10 +29,10 @@
 	<h5 class="mb-2 p-3 text-2xl font-bold tracking-tight">{title}</h5>
 	<p class="mb-3 h-[20rem] overflow-y-scroll p-3 font-normal text-slate-50">
 		<slot />
-		<span class="block mt-5 text-xl font-semibold">
-			<Icon icon={"mdi:location"} inline={true} class="text-green-500 inline" />{location}
-		</span>
 	</p>
+	<span class="block mt-5 text-xl font-bold text-white tracking-tight my-2">
+		<Icon icon={"mdi:location"} inline={true} class="text-green-500 inline" />{titleCase(location)}
+	</span>
 	{#if button}
 		<ButtonLink
 			href={button?.href}

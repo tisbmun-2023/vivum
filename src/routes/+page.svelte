@@ -47,10 +47,10 @@
 				and the winner takes all!
 
 				<UnorderedList>
-					<ListItem>Teams consisting of four to eight members</ListItem>
-					<ListItem>Bands have 15 minutes, including set-up time, to perform.</ListItem>
-					<ListItem>Four teams will advance to our finals</ListItem>
-					<ListItem>Teams must play for 10 minutes, excluding set-up time</ListItem>
+					<ListItem>One team representing each school</ListItem>
+					<ListItem>Bands will have 10 minutes, including set-up time, to perform.</ListItem>
+					<ListItem>Teams will perform across the two days</ListItem>
+					<ListItem>There will be no preliminary round</ListItem>
 					<ListItem>
 						We will provide a five-piece drum set-up, two guitar amps, one bass amp, one keyboard
 						amp, a grand piano, and five mics that can be used.
@@ -63,27 +63,7 @@
 				</UnorderedList>
 			</EventCard>
 			<EventCard
-				title="Beatbox Battle"
-				button={{
-					text: 'Register Now',
-					href: 'https://forms.office.com/r/CV1zSBs3aj'
-				}}
-				location="Radio Shack"
-			>
-				Similar to the rap battle, this event showcases students facing off and flaunting their
-				talents, creating the most complex beat possible solely with their mouth to triumph over
-				their opponent. The winner will be decided by the cheers of the crowd and the intricacy of
-				their sounds.
-
-				<UnorderedList>
-					<ListItem>
-						Only six teams will be allowed to participate on a first-come-first-serve basis, so
-						reserve your spot quickly!
-					</ListItem>
-				</UnorderedList>
-			</EventCard>
-			<EventCard
-				title="Rap battle"
+				title="Rap Battle"
 				button={{
 					text: 'Register Now',
 					href: 'https://forms.office.com/r/e55rpGYYii'
@@ -99,9 +79,62 @@
 					<ListItem>Two participants will be pitted against each other each round</ListItem>
 				</UnorderedList>
 				<p class="mt-3">
-					Ingenuity, spontaneity, and passion for rap are core components of this freestyle battle,
-					yet, in true street fashion, there are no set judges: the crowd determines the winners.
+					The freestyle battle, in true street fashion, have no set judges: the crowd determines the winners.
 				</p>
+			</EventCard>
+			<EventCard
+				title="Beatbox Battle"
+				button={{
+					text: 'Register Now',
+					href: 'https://forms.office.com/r/CV1zSBs3aj'
+				}}
+				location="Radio Shack"
+			>
+				Similar to the rap battle, this event showcases students facing off, creating the most complex 
+				beat possible solely with their mouth to triumph over their opponent. The winner will be decided by 
+				the cheers of the crowd.
+
+				<UnorderedList>
+					<ListItem>
+						Two participants will compete against each other in a knockout format.
+					</ListItem>
+				</UnorderedList>
+			</EventCard>
+			<EventCard
+				title="VIVUM's Got Talent"
+				button={{
+					text: 'Registration',
+					href: 'https://forms.office.com/r/0FcYLVvVDZ'
+				}}
+				location="Main Auditorium"
+			>
+				Tune your instruments, pick up your paint and practice your magic tricks, 
+				because VIVUM's Got Talent is back! A multifacted talent show. VIVUM's Got Talent 
+				appeals to all kinds of artists giving them a stage to showcase their skills.
+
+				<UnorderedList>
+					<ListItem>
+						This event is a chance for participants to showcase their diverse 
+						abilities via solo acts or group performances consisting of a maximum 
+						of eight people
+					</ListItem>
+					<ListItem>
+						Participants will be evaluated on their creativity, execution, talent and 
+						audience appeal, based on their three-minute performances.
+					</ListItem>
+					<ListItem>
+						All individuals/teams will be competing in one round
+					</ListItem>
+					<ListItem>
+						Participants must notify the organizers in advance about their equipment and 
+						stage requirements in order to facilitate stage set-up
+					</ListItem>
+					<ListItem>
+						<span class="text-xl animate-pulse">
+							All performances are welcome!
+						</span>
+					</ListItem>
+				</UnorderedList>
 			</EventCard>
 		</FlexedArea>
 	</Group>
@@ -255,16 +288,45 @@
 				location = "Main auditorium"
 			>
 				This event features students showing off their creative fashion sense on the runway. 
-				<br/><br/>
-
-				Participants will design and model their own outfits, and a panel of judges will choose the winners based on their originality and creativity.
+				<br/>
+				Participants will design and model their own outfits, and a panel of judges will choose the winners 
+				based on their originality and creativity.
 
 				<UnorderedList>
 					<ListItem>Each school can send two pairs</ListItem>
 					<ListItem>30 participants will walk in pairs</ListItem>
+					<ListItem>Participants will walk in pairs and judges will decide on the best looks presented.</ListItem>
 					<ListItem>Judges will decide on one of these two looks.</ListItem>
 					<ListItem>25 people will progress to the next round, and put into groups of 5, with 2 winning.</ListItem>
 					<ListItem>Round 3 will have 10 people left, describing their outfit, the relevance to the theme, and their inspiration</ListItem>
+					<ListItem>
+						A list of themes for each round is given below:
+
+						<OrderedList>
+							<ListItem>
+								Indigo (Indian Fusion Wear inspired by the color 'Indigo').
+
+								This can range from Lehenga's and suits to Kurta's and half-sarees.
+							</ListItem>
+							<ListItem>
+								Under The Sea: bring out your best looks that are inspired by the world
+								under us. It can be anything from the plants to the fascinating wildlife
+							</ListItem>
+							<ListItem>
+								Best In Blue: Resembling the colour of VIVUM'23. 
+								Show off your best 'western' blue look, the variety 
+								in color can range from a light blue to a dark midnight blue.
+							</ListItem>
+						</OrderedList>
+					</ListItem>
+					<ListItem>
+						The event will take place over 2 days. Day 1 will have the first round and day 2 will have the next 2 rounds
+					</ListItem>
+					<ListItem>
+						<span class="text-xl animate-pulse">
+							We look forwards to seeing you strut down the red carpet
+						</span>
+					</ListItem>
 				</UnorderedList>
 			</EventCard>
 		</FlexedArea>
@@ -284,6 +346,27 @@
 				<br/><br/>
 
 				The event also features a designated "wet zone" where people can throw around water for fun.
+			</EventCard>
+			<EventCard
+				title="Paparazzi"
+				button={{
+					text: "On-spot registration only",
+					href: "#",
+					disabled: true
+				}}
+				location = "Near Game Stalls"
+			>
+				Pose for the camera!
+
+				<br/><br/>
+
+				A designated photographer will be walking around VIVUM'23 to capture the best moments. 
+				
+				<br/><br/>
+
+				We want to see the best poses you can come up with when suddenly faced with the camera. 
+
+				<br /><br/>
 			</EventCard>
 		</FlexedArea>
 	</Group>
@@ -308,7 +391,7 @@
 			The group with the most unique and entertaining idea, as determined by the judges and audience votes, will be declared the winner.
 			</EventCard>
 			<EventCard
-				title="Wonder Woman/Iron man challenge"
+				title="Wonder Woman/Iron Man Challenge"
 				button={{
 					text: "On-spot registration only",
 					href: "#",
@@ -334,29 +417,6 @@
 				Participants will work together to create a large canvas painting during the event, adding their unique touch to a masterpiece in the making.
 
 				<br/><br/>
-			</EventCard>
-			<EventCard
-				title="Paparazzi"
-				button={{
-					text: "On-spot registration only",
-					href: "#",
-					disabled: true
-				}}
-				location = "Near Game Stalls"
-			>
-				Pose for the camera!
-
-				<br/><br/>
-
-				A designated photographer will be walking around VIVUM'23 to capture the best moments. 
-				
-				<br/><br/>
-
-				We want to see the best poses you can come up with when suddenly faced with the camera. 
-
-				<br /><br/>
-
-				<em>Location: Near game stalls</em>
 			</EventCard>	
 			<EventCard
 				title="Shark Scanveger Hunt"

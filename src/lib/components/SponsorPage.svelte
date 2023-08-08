@@ -21,6 +21,8 @@
 			<Sponsor id="champions-group" name="Champions Group" href="https://www.championsgroup.com/" />
 			<Sponsor id="rawpressery" name="Raw Pressery" href="https://www.rawpressery.com/" />
 			<Sponsor id="dailyhunt" name="DailyHunt" href="https://m.dailyhunt.in/" />
+			<Sponsor id="questforsuccess" name="Quest For Success" href="https://www.questforsuccess.in//" />
+			<!--<Sponsor id="wildcraft" name="Wildcraft" href="https://wildcraft.com/" />-->
 		</FlexedArea>	
 	</Group>
 	<Group title="Silver Sponsors" id="silver-sponsor">
@@ -29,7 +31,6 @@
 			<Sponsor id="impelsys" name="Impelsys" href="https://www.impelsys.com/" />
 			<Sponsor id="rajsuperwhite" name="Raj Super White" href="http://www.rajsuperwhite.com/" />
 			<Sponsor id="redrhino" name="Red Rhino" href="https://redrhino.co.in/" />
-
 		</FlexedArea>
 	</Group>
 </article>
